@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estructuras de Datos - CS2031 Team</title>
-    <link rel="stylesheet" href="index.css" />
+
+    <link rel="stylesheet" href="styles/page.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/team.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -19,7 +26,6 @@
               <span class="nav__logo">CS2031</span>
             </div>
 
-            <!-- Hidden checkbox for mobile menu toggle -->
             <input type="checkbox" id="nav-toggle" class="nav__checkbox" />
             <label for="nav-toggle" class="nav__toggle">
               <span class="nav__toggle-line nav__toggle-line--top"></span>
@@ -29,15 +35,12 @@
 
             <ul class="nav__list">
               <li class="nav__item">
-                <!-- BUG #1: este enlace apunta a la seccion equivocada, deberia ser #hero -->
                 <a href="#inicio" class="nav__link">Inicio</a>
               </li>
               <li class="nav__item">
-                <!-- BUG #2: este enlace apunta a la seccion equivocada, deberia ser #about -->
                 <a href="#sobre" class="nav__link">Acerca de</a>
               </li>
               <li class="nav__item">
-                <!-- BUG #3: este enlace apunta a la seccion equivocada, deberia ser #team -->
                 <a href="#integrantes" class="nav__link">Equipo</a>
               </li>
             </ul>
@@ -57,9 +60,7 @@
                 <a href="#about" class="hero__button hero__button--primary"
                   >Aprender más</a
                 >
-                <a
-                  href="#team"
-                  class="hero__button hero__button--secondary"
+                <a href="#team" class="hero__button hero__button--secondary"
                   >Conocer al equipo</a
                 >
               </div>
@@ -88,9 +89,7 @@
                 </div>
                 <h3 class="about__card-title">Estructuras Lineales</h3>
                 <p class="about__card-text">
-                  Arrays, listas enlazadas, pilas y colas son las estructuras
-                  fundamentales que permiten organizar y acceder a datos de
-                  manera secuencial. Son la base para algoritmos más complejos.
+                  Arrays, listas enlazadas, pilas y colas son las estructuras fundamentales.
                 </p>
               </div>
 
@@ -100,9 +99,7 @@
                 </div>
                 <h3 class="about__card-title">Árboles y Grafos</h3>
                 <p class="about__card-text">
-                  Los árboles binarios, AVL y grafos representan relaciones
-                  jerárquicas y conexiones entre datos. Son esenciales para
-                  búsquedas eficientes y navegación en redes.
+                  Representan relaciones jerárquicas y conexiones entre datos.
                 </p>
               </div>
 
@@ -112,9 +109,7 @@
                 </div>
                 <h3 class="about__card-title">Complejidad Algorítmica</h3>
                 <p class="about__card-text">
-                  Entender Big O notation es crucial para escribir código
-                  eficiente. La diferencia entre O(n) y O(n²) puede significar
-                  segundos vs horas en datasets grandes.
+                  Entender Big O es clave para código eficiente.
                 </p>
               </div>
             </div>
@@ -131,64 +126,64 @@
             </div>
 
             <div class="team__grid">
-              <!-- INTEGRANTE 2: Reemplaza con tus datos -->
+
+              <!-- JEAN -->
               <div class="team-card">
                 <div class="team-card__image">
-                  <!-- Aquí tu foto de perfil (URL de GitHub u otra imagen) -->
-                  <img
-
-                    src="https://www.tiktok.com/discover/fondo-de-pantalla-bac%C3%A1n"
-                    alt="Itta Saavedra"
-
-                    src="https://www.pinterest.co.kr/pin/789748484630246612/"
-                    alt="Enrique"
-                    src="https://img.fotocommunity.com/pato-real-fb9125e6-d04e-4f34-b352-51db1fea4b5b.jpg?height=1080"
-                    alt="Jean Piere"
-                    class="team-card__photo"
-                  />
+                  <img src="https://img.fotocommunity.com/pato-real-fb9125e6-d04e-4f34-b352-51db1fea4b5b.jpg" alt="Jean Piere" class="team-card__photo" />
                 </div>
                 <div class="team-card__content">
-                  <!-- Aquí tu nombre completo -->
-                  <h3 class="team-card__name">Itta Saavedra</h3>
-                  <!-- Aquí tu especialidad o rol -->
-                  <p class="team-card__role">Estudiante_CS</p>
-                  <div class="team-card__social">
-                    <!-- Reemplaza # con tu URL de GitHub -->
-                    <a
-                      href="https://github.com/Saavedra0206"
-
-                  <h3 class="team-card__name">Enrique Torres Chafloque</h3>
-                  <!-- Aquí tu especialidad o rol -->
-                  <p class="team-card__role">Ciencia de datos</p>
-                  <div class="team-card__social">
-                    <!-- Reemplaza # con tu URL de GitHub -->
-                    <a
-                      href="https://github.com/jeanarana-csutec/H_F.git"
                   <h3 class="team-card__name">Jean Piere</h3>
-                  <!-- Aquí tu especialidad o rol -->
                   <p class="team-card__role">Player</p>
                   <div class="team-card__social">
-                    <!-- Reemplaza # con tu URL de GitHub -->
-                    <a
-                      href="https://github.com/jeanarana-csutec"
-                      class="team-card__social-link team-card__social-link--github"
-                    >
+                    <a href="https://github.com/jeanarana-csutec" class="team-card__social-link team-card__social-link--github">
                       <i class="fab fa-github"></i>
                     </a>
-                    <!-- Reemplaza # con tu URL de LinkedIn -->
-                    <a
-
-                      href="https://www.google.com/imgres?q=linkedin&imgurl=https%3A%2F%2Feconomipedia.com%2Fwp-content%2Fuploads%2FLinkedin-1.png&imgrefurl=https%3A%2F%2Feconomipedia.com%2Fdefiniciones%2Flinkedin.html&docid=svdHko_eCOFzWM&tbnid=NxsGssvWtNFPrM&vet=12ahUKEwisnsPwztyTAxWSnpUCHT4fD5YQnPAOegQIJRAB..i&w=640&h=640&hcb=2&ved=2ahUKEwisnsPwztyTAxWSnpUCHT4fD5YQnPAOegQIJRAB"
-
-                      href="www.linkedin.com/in/enrique-torres-563432365"
-                      href="https://www.linkedin.com/in/jean-piere-milan-arana-chiong-86b4a8382/"
-                      class="team-card__social-link team-card__social-link--linkedin"
-                    >
+                    <a href="https://www.linkedin.com/in/jean-piere-milan-arana-chiong-86b4a8382/" class="team-card__social-link team-card__social-link--linkedin">
                       <i class="fab fa-linkedin"></i>
                     </a>
                   </div>
                 </div>
               </div>
+
+              <!-- ITTA -->
+              <div class="team-card">
+                <div class="team-card__image">
+                  <img src="https://img.fotocommunity.com/pato-real-fb9125e6-d04e-4f34-b352-51db1fea4b5b.jpg" alt="Itta Saavedra" class="team-card__photo" />
+                </div>
+                <div class="team-card__content">
+                  <h3 class="team-card__name">Itta Saavedra</h3>
+                  <p class="team-card__role">Estudiante CS</p>
+                  <div class="team-card__social">
+                    <a href="https://github.com/Saavedra0206" class="team-card__social-link team-card__social-link--github">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="team-card__social-link team-card__social-link--linkedin">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ENRIQUE -->
+              <div class="team-card">
+                <div class="team-card__image">
+                  <img src="https://img.fotocommunity.com/pato-real-fb9125e6-d04e-4f34-b352-51db1fea4b5b.jpg" alt="Enrique Torres" class="team-card__photo" />
+                </div>
+                <div class="team-card__content">
+                  <h3 class="team-card__name">Enrique Torres Chafloque</h3>
+                  <p class="team-card__role">Ciencia de datos</p>
+                  <div class="team-card__social">
+                    <a href="https://github.com/jeanarana-csutec/H_F.git" class="team-card__social-link team-card__social-link--github">
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/enrique-torres-563432365" class="team-card__social-link team-card__social-link--linkedin">
+                      <i class="fab fa-linkedin"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
         </section>
